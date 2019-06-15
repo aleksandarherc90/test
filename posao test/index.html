@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" href="coin.js"></script>
+	<style type="text/css" href="style.css"></style>
+	<title>Test</title>
+	<!--bootstrap -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+				<table class="table table-bordered" id="myTable">
+					    <thead >
+					      <tr>
+					        <th>Name</th>
+					        <th>Short Name</th>
+					        <th>$ value</th>
+					        <th>last 24h</th>
+					        <th>Amount you own</th>
+					        <th>$value of your coin</th>
+					      </tr>
+					    </thead>
+					    <tbody>
+					    	<!-- first  -->
+					      <tr>
+					        <td><a href="https://www.binance.com/en" target="_blank"> Binance</a></td>
+					        <td class="text-center">BTC/USDT</td>
+					        <td class="valuecoin">$8,423.43	</td>
+							<td class=" text-center"><span class="percentages">3.34</span>%</td>
+					        <td class="text-center"><input class="in" type="text" name="value" placeholder="Amount you own"> <br>
+					        	<button   class=" btn btn-primary btn-sm" onclick="myFunction()">Submit</button>
+					        </td>
+					        <td class="">$</td>					      
+					      </tr>
+
+					      <!-- second -->
+					      <tr>
+					        <td><a href="https://www.bitcoincash.org" target="_blank">Bitcoin Cash</a></td>
+					        <td class="text-center">BCH</td>
+					        <td class="valuecoin">$413.20</td>
+							<td class=" text-center"><span class="percentages">0.06</span> %</td>
+					        <td class="text-center"><input class="in" type="text" name="value" placeholder="Amount you own"> <br>
+					        	<button   class="btn btn-primary btn-sm" onclick="myFunction()">Submit</button>
+					        </td>
+					        <td class="dolar">$</td>
+					         </tr>
+
+					         <!-- third -->
+					      <tr>
+						 	<td><a href="https://litecoin.org/" target="_blank">Litecoin</a></td>
+					        <td class="text-center">LTC</td>
+					        <td class="valuecoin">$129.58 </td>
+							<td class=" text-center"><span class="percentages">-4.05</span> %</td>
+					        <td class="text-center"><input class="in" type="text" name="value" placeholder="Amount you own"> <br>
+					        	<button class="btn btn-primary btn-sm" onclick="myFunction()">Submit</button>
+					        </td>
+					        <td>$</td>					      
+					      </tr>
+
+					      <!-- fourth -->
+					      <tr>
+					        <td><a href="https://www.monetha.io/" target="_blank">Monetha</a></td>
+					        <td class="text-center">MTH</td>
+					        <td class="valuecoin">$0.038291</td>
+							<td class=" text-center"><span class="percentages">-4.05</span>%</td>
+					        <td class="text-center"><input  type="text" name="value" placeholder="Amount you own"> <br>
+					        	<button class="btn btn-primary btn-sm" onclick="myFunction()">Submit</button>
+					        </td>
+					        <td class="dolar">$</td>					      
+					      </tr>
+
+					      <!-- fifth -->
+					      <tr>
+					        <td><a href="https://eos.io/" target="_blank">Monetha</a></td>
+					        <td class="text-center">EOS</td>
+					        <td class="valuecoin">$6.46</td>
+							<td class=" text-center"><span class="percentages">-0.76</span>%</td>
+					        <td class="text-center"><input class="in" type="text" name="value" placeholder="Amount you own"> <br>
+					        	<button  class=" btn btn-primary btn-sm" onclick="myFunction()">Submit</button>
+					        </td>
+					        <td class="dolar">$</td>					      
+					      </tr>
+					      <!-- sixth -->
+					      <tr>
+					        <td><a href="https://www.cardano.org/en/home/" target="_blank">Cardano</a></td>
+					        <td class="text-center">ADA</td>
+					        <td class="valuecoin">$0.087318</td>
+							<td class=" text-center"><span class="percentages">-5.93</span>%</td>
+					        <td class="text-center"><input class="in" type="text" name="value" placeholder="Amount you own"> <br>
+					        	<button class="btn btn-primary btn-sm" onclick="myFunction()">Submit</button>
+					        </td>
+					        <td class="dolar">$</td>					      
+					      </tr>
+
+
+					      <!-- seventh -->
+					      <tr>
+					        <td><a href="https://z.cash/" target="_blank"> Zcash</a></td>
+					        <td class="text-center">ZEC</td>
+					        <td class="valuecoin">$89.11</td>
+							<td class=" text-center"><span class="percentages">-1.71</span>%</td>
+					        <td class="text-center"><input class="in" type="text" name="value" placeholder="Amount you own"> <br>
+					        	<button  type="Submit" class="btn btn-primary btn-sm" onclick="myFunction()">Submit</button>
+					        </td>
+					        <td class="dolar">$</td>					      
+					      </tr>
+					      
+					    </tbody>
+					  </table>
+							
+		</div>
+	</div>
+
+				
+
+							<script>
+									
+						function myFunction() {
+						 var x=document.getElementByClassName(".in").value;
+						 document.getElementByClassName(".dolar").innerHTML =x +" ";
+						  
+						}
+							</script>
+							
+							<script>
+								function ChangeColor() {
+						var x=document.getElementByClassName(".percentages").value;
+						  		
+							        if (x<0) {
+							        document.getElementClassName("centerbox1").style.backgroundColor = "red";
+							        }
+							        else  
+							        {	
+							        document.getElementClassName("centerbox1").style.backgroundColor = "green";	
+										}
+							</script>
+
+							<script>
+
+
+									var button = document.getElementClassName(".btn");
+									var clickBtn = document.getElementsByClassName('.in')[0];
+
+
+									button.disabled = true;
+
+
+									clickBtn.addEventListener('in', function(event) {
+									    button.disabled = !button.disabled;
+									});
+
+									
+							</script>	
+
+</body>
+</html>
